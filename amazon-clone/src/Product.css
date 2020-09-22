@@ -10,8 +10,13 @@
   min-width: 100px;
   background-color: white;
   z-index: 1;
+  transition: transform 200ms;
 }
 
+.product:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .product > img {
   max-height: 200px;
   width: 100%;
