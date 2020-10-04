@@ -10,6 +10,7 @@ import { useStateValue } from "./StateProvider";
 import Payment from "./Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Orders from "./Orders";
 
 // loads stripe into promise
 const promise = loadStripe(
@@ -22,8 +23,6 @@ function App() {
   useEffect(() => {
     // auth returns the authenticated user
     auth.onAuthStateChanged((authUser) => {
-      console.log("User is 😁", authUser);
-
       if (authUser) {
         // user logged in
         dispatch({
@@ -57,6 +56,11 @@ function App() {
               {/*higher order function*/}
               <Payment />
             </Elements>
+          </Route>
+
+          <Route path="/orders">
+            <Header />
+            <Orders />
           </Route>
 
           <Route path="/">
