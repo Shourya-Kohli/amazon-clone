@@ -2,7 +2,7 @@
 
 - This is the Amazon Clone build with reactjs and Firebase for backend functionality and Stripe for payments.
 - Complete User Authentication
-- Similar Ui where you can add or remove product with basket functionality.
+- Similar Ui where you can add or remove product, basket functionality and CheckOut Page.
 
 ## Technology Used
 
